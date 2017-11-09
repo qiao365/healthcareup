@@ -1,0 +1,8 @@
+keyAlias 'beijing'
+            keyPassword '123456'
+            storeFile file('doc/key.jks')
+            storePassword '123456'
+password:123456
+
+MD5 : 99:FA:D1:C6:3D:65:69:F1:86:9B:FD:88:4B:2A:97:A7
+SHA1: 62:EA:82:51:39:DF:76:C9:1F:17:62:0A:BF:A6:36:DD:8F:E4:5F:25

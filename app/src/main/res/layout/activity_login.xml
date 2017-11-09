@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="60px"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="onClick"
+        android:padding="10px"
+        android:text="注册"
+        android:textColor="@color/deep_sky_blue"
+        android:textSize="46px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="260px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260px"
+        android:src="@mipmap/logoc" />
+
+    <EditText
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="178px"
+        android:layout_marginRight="178px"
+        android:layout_marginTop="175px"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:textColor="@color/dusk"
+        android:textColorHint="@color/pale_grey"
+        android:textSize="45px" />
+
+
+    <EditText
+        android:id="@+id/tv_pw"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="178px"
+        android:layout_marginRight="178px"
+        android:layout_marginTop="38px"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:hint="密码"
+        android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+        android:inputType="textPassword"
+        android:textColor="@color/dusk"
+        android:textColorHint="@color/pale_grey"
+        android:textSize="45px" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="178px"
+        android:layout_marginRight="178px"
+        android:layout_marginTop="58px"
+        android:gravity="center"
+        android:text="登陆"
+        android:textColor="@color/white"
+        android:textSize="48px"
+        android:textStyle="bold"
+        app:rv_backgroundColor="@color/deep_sky_blue"
+        app:rv_backgroundPressColor="@color/white"
+        app:rv_cornerRadius="10px"
+        app:rv_textPressColor="@color/deep_sky_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230px"
+        android:lineSpacingExtra="36px"
+        android:padding="10px"
+        android:text="忘记了登录信息？获得登录帮助"
+        android:textColor="@color/rey_blue"
+        android:textSize="36px" />
+</LinearLayout>

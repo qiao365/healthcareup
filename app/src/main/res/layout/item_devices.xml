@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="69dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/device" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:text="一体机"
+        android:textColor="#4a4a4a"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="12dp"
+        android:letterSpacing="-0.0"
+        android:text="测量心电、血压、血氧、体温、血糖健康数据"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/btnTvpRESS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:gravity="center_horizontal"
+        android:text="解除绑定"
+        android:paddingRight="30px"
+        android:paddingLeft="30px"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:background="@drawable/shape_corner_line_blue"
+        android:textColor="#7f81d9"
+        android:textSize="13sp" />
+
+</RelativeLayout>

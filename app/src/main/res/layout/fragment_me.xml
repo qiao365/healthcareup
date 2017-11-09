@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90px"
+            android:layout_marginTop="90px"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="退出登录"
+            android:textColor="@color/grey_93a8ac"
+            android:textSize="16sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/avatar"
+            app:civ_border_color="@color/avatar_background"
+            app:civ_border_width="9dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="name"
+            android:textColor="@color/black_text"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_change_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="修改个人资料"
+            android:textColor="@color/grey_93a8ac"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="25dp"
+        android:background="@color/cccccc" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/center_my_service"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/clickable_white"
+                android:clickable="true"
+                android:paddingLeft="110px"
+                android:paddingRight="100px">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/my_service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="70px"
+                    android:layout_toRightOf="@+id/img1"
+                    android:text="我的服务"
+                    android:textColor="@color/grey_424b54"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_add_record"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/clickable_white"
+                android:clickable="true"
+                android:paddingLeft="110px"
+                android:paddingRight="100px">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_marginTop="13dp"
+                    android:src="@mipmap/my_bcjkjl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="70px"
+                    android:layout_toRightOf="@+id/img5"
+                    android:text="补充健康记录"
+                    android:textColor="@color/grey_424b54"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_my_devices"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/clickable_white"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="110px"
+                android:paddingRight="100px">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_marginTop="13dp"
+                    android:src="@mipmap/my_wdsb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="70px"
+                    android:layout_toRightOf="@+id/img2"
+                    android:text="我的设备"
+                    android:textColor="@color/grey_424b54"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_near_devices"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/clickable_white"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="110px"
+                android:paddingRight="100px">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_marginTop="13dp"
+                    android:src="@mipmap/my_fjsb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="70px"
+                    android:layout_toRightOf="@+id/img3"
+                    android:text="附近设备"
+                    android:textColor="@color/grey_424b54"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/center_shop"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/clickable_white"
+                android:clickable="true"
+                android:paddingLeft="110px"
+                android:paddingRight="100px">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_marginTop="13dp"
+                    android:src="@mipmap/my_sc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="70px"
+                    android:layout_toRightOf="@+id/img6"
+                    android:text="商城"
+                    android:textColor="@color/grey_424b54"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <!--修改密码-->
+            <RelativeLayout
+                android:id="@+id/rl_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/clickable_white"
+                android:clickable="true"
+                android:paddingLeft="110px"
+                android:paddingRight="100px">
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="72px"
+                    android:layout_height="72px"
+                    android:layout_marginTop="13dp"
+                    android:src="@mipmap/my_cpw" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="70px"
+                    android:layout_toRightOf="@+id/img7"
+                    android:text="修改密码"
+                    android:textColor="@color/grey_424b54"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

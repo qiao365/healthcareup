@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!-- actionbar -->
+    <include layout="@layout/human_include_titlebar_tab" />
+    <!-- 分割线 -->
+    <include layout="@layout/human_include_division_light_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_body"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fly_treat_self_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ly_fragment_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingRight="24dp">
+
+                    <com.semioe.healthcareup.human.IosButton
+                        android:id="@+id/ibtn_exchange"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/exchange_new" />
+
+                    <TextView
+                        android:id="@+id/tv_reverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:text="正面"
+                        android:textColor="@color/symptoms_self_diagnostics_tab_dark_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="100px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="110px"
+                    android:paddingRight="80px">
+
+                    <TextView
+                        android:id="@+id/tv_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="部位"
+                        android:textColor="@color/text_color"
+                        android:textSize="50px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="症状"
+                        android:textColor="@color/text_color"
+                        android:textSize="50px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="60px"
+                    android:background="@color/border_line" />
+
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/rtv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginBottom="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:layout_marginTop="100px"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="42px"
+                app:rv_backgroundColor="@color/deep_sky_blue"
+                app:rv_backgroundPressColor="@color/color_fafafa"
+                app:rv_cornerRadius="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

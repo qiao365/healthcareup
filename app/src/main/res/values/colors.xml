@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="origen">#fd7f00</color>
+    <color name="deep_sky_blue">#0082ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="pale_grey">#dce2ee</color>
+    <color name="dusk">#535376</color>
+    <color name="rey_blue">#656589</color>
+    <color name="black">#000000</color>
+    <color name="black2">#333333</color>
+    <color name="warm_grey">#999999</color>
+    <color name="board_grey">#e7e7e7</color>
+    <color name="blue1">#0082ff</color>
+    <color name="blue_c6dee8">#71c2e4</color>
+    <color name="blue_button_bg_press">#34649e</color>
+    <color name="color_7c80dc">#7c80dc</color>
+    <color name="color_407c80dc">#607c80dc</color>
+    <color name="font_grey">#acacac</color>
+
+    <!--用于折线颜色-->
+    <color name="line_01">#0082ff</color>
+    <color name="line_02">#fd7f00</color>
+    <color name="line_03">#f2e53e</color>
+    <color name="line_04">#3dd894</color>
+    <color name="line_round">#9566f0</color>
+
+    <!--用于重要级文字信息  内容标题信息-->
+    <color name="black_text">#333333</color>
+    <color name="grey_text2">#666666</color>
+    <color name="grey_text3">#999999</color>
+    <color name="grey_4a4a4a">#4a4a4a</color>
+    <color name="grey_text4">#637485</color>
+    <color name="grey_aeb3b8">#aeb3b8</color>
+    <color name="grey_4d5764">#4d5764</color>
+    <color name="grey_424b54">#424b54</color>
+    <color name="grey_93a8ac">#93a8ac</color>
+    <color name="avatar_background">#f6f6fa</color>
+    <color name="cccccc">#cccccc</color>
+    <color name="color_4f4f6f">#4f4f6f</color>
+    <color name="color_88889c">#88889c</color>
+    <color name="color_9b9b9b">#9b9b9b</color>
+    <color name="color_c1c1c1">#c1c1c1</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_6a6a77">#6a6a77</color>
+
+
+    <!--分割线-->
+    <color name="divider_line">#ccd6dd</color>
+    <color name="border_line">#dce2ee</color>
+    <color name="bebebeb_line">#ebebeb</color>
+
+    <color name="symptoms_self_diagnostics_tab_blue_text">#3fafef</color>
+    <color name="gray_light">#EDEDED</color>
+    <color name="symptoms_self_diagnostics_tab_dark_text">#444444</color>
+
+</resources>

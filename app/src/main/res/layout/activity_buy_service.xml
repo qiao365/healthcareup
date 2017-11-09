@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="onClick"
+            android:src="@mipmap/back_b" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="购买服务" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/bebebeb_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:layout_marginBottom="40px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/myImgView"
+            android:layout_width="150px"
+            android:layout_height="200px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="20px"
+            android:background="@mipmap/avatar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="李思维"
+                android:textColor="@color/text_color"
+                android:textSize="43px" />
+
+            <TextView
+                android:id="@+id/mPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/doctorName"
+                android:layout_below="@+id/doctorName"
+                android:layout_marginTop="10px"
+                android:text="心内科副主任"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/hospitalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/doctorName"
+                android:layout_below="@+id/mPosition"
+                android:layout_marginTop="10px"
+                android:text="北京儿童医院"
+                android:textSize="48px" />
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:src="@mipmap/more" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60px"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mTvShanChang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="擅长："
+            android:textColor="@color/grey_text2"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/mtvShanChang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="35px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="40px"
+        android:background="@color/bebebeb_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="80px"
+        android:orientation="vertical"
+        android:paddingBottom="40px"
+        android:paddingTop="60px">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="18px"
+            android:src="@mipmap/dot_green" />
+
+        <TextView
+            android:id="@+id/mTVtypeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="颈椎病风险评估"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/mTVxunwen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/avatar"
+            android:layout_below="@+id/mTVtypeName"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25px"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5sp"
+            android:text=""
+            android:textColor="#9ea4af"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Prece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buyTextView"
+            android:text="¥ 5.00元"
+            android:textSize="55px"
+            android:layout_marginBottom="70px"
+            android:textColor="@color/origen"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/buyTextView"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_corner_blue"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="30px"
+            android:layout_marginRight="80px"
+            android:layout_marginLeft="80px"
+            android:textSize="48px" />
+    </RelativeLayout>
+</LinearLayout>

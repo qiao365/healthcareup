@@ -1,0 +1,500 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:text="健康档案"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:layout_toLeftOf="@+id/mTvGZZ"
+            android:background="@mipmap/search" />
+
+        <TextView
+            android:id="@+id/mTvGZZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rightImg"
+            android:text="关注者"
+            android:textColor="@color/grey_text2" />
+
+        <ImageView
+            android:id="@+id/rightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="40px"
+            android:background="@mipmap/drop_down" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="40px"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb0"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bg_01"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="6dip"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:paddingTop="6dip"
+                    android:text="近三个月"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bg_02"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="6dip"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:paddingTop="6dip"
+                    android:text="近半年"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bg_03"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="6dip"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:paddingTop="6dip"
+                    android:text="全部"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="60px"
+                android:text="血压（mmHg）" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="60px"
+                android:text="血尿酸（umol/L）" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="20px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="50px"
+                android:background="@color/divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mtvSG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="140px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="肾功" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100px"
+                    android:src="@mipmap/ic_right" />
+            </LinearLayout>
+
+            <com.semioe.healthcareup.views.ListViewForScrollView
+                android:id="@+id/mListView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="50px"
+                android:background="@color/divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mtvXZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="140px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="血脂" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100px"
+                    android:src="@mipmap/ic_right" />
+            </LinearLayout>
+
+            <com.semioe.healthcareup.views.ListViewForScrollView
+                android:id="@+id/mListView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="50px"
+                android:background="@color/divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mtvNCG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="140px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="尿常规" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100px"
+                    android:src="@mipmap/ic_right" />
+
+            </LinearLayout>
+
+
+            <com.semioe.healthcareup.views.ListViewForScrollView
+                android:id="@+id/mListView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:visibility="gone" />
+            <!--<TableLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_below="@+id/linear"-->
+            <!--android:layout_marginBottom="160px"-->
+            <!--android:layout_marginLeft="10px"-->
+            <!--android:layout_marginRight="40px"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/relative1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TableRow-->
+            <!--android:id="@+id/row1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/warm_grey" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but2"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="检测值"-->
+            <!--android:textColor="@color/warm_grey"-->
+            <!--android:textSize="26px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but3"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="单位"-->
+            <!--android:textColor="@color/warm_grey"-->
+            <!--android:textSize="26px" />-->
+
+            <!--</TableRow>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TableRow-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but11"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="血尿素氮(BUN)"-->
+            <!--android:textColor="@color/warm_grey"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but12"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#f7a051"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="124"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but13"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#e96b6c"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="mmol/L "-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px" />-->
+
+            <!--</TableRow>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TableRow-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but21"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="血肌酐(Scr)"-->
+            <!--android:textColor="@color/warm_grey"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but22"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#46bfec"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="71"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but23"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#f99f53"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="μmol/L"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px" />-->
+
+            <!--</TableRow>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TableRow-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but31"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="Average"-->
+            <!--android:textColor="@color/warm_grey"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but32"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#39d993"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="88"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/but33"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_margin="1px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#f3e53e"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15px"-->
+            <!--android:paddingTop="15px"-->
+            <!--android:text="62"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="30px" />-->
+
+            <!--</TableRow>-->
+            <!--</RelativeLayout>-->
+
+            <!--</TableLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

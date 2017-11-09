@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110px"
+        android:layout_marginTop="130px"
+        android:text="饮水记录"
+        android:textColor="@color/font_grey"
+        android:textSize="68px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110px"
+        android:layout_marginTop="65px"
+        android:text="上下滑动改变饮水量"
+        android:textColor="@color/grey_4d5764"
+        android:textSize="50px" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="1100px"
+        android:layout_marginTop="100px">
+
+        <com.semioe.healthcareup.views.DynamicWave
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130px"
+            android:src="@mipmap/biaochi_b" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seek_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日已饮水"
+                android:textColor="@color/white"
+                android:textSize="65px" />
+
+            <TextView
+                android:id="@+id/tv_ysl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:textColor="@color/white"
+                android:textSize="80px" />
+        </LinearLayout>
+
+        <com.semioe.healthcareup.views.VerticalSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:progressDrawable="@color/transparent"
+            android:thumb="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

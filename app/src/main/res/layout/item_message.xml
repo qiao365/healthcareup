@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:text="2017年"
+        android:textColor="@color/grey_text3"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/year"
+        android:layout_marginLeft="10px"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/year"
+        android:text="06月01日"
+        android:textColor="@color/grey_text2"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/year"
+        android:layout_below="@+id/year"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="40px">
+
+        <ImageView
+            android:id="@+id/lineview"
+            android:layout_width="4px"
+            android:visibility="gone"
+            android:layout_height="300px"
+            android:layout_marginRight="30px"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:id="@+id/tvJKTX"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/lineview"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="健康提醒" />
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignLeft="@+id/tvJKTX"
+            android:layout_below="@+id/tvJKTX"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="20px"
+            android:visibility="gone"
+            android:background="@mipmap/like_1080"
+            />
+        <TextView
+            android:id="@+id/contrnt"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/img2"
+            android:layout_alignBottom="@+id/img2"
+            android:layout_alignTop="@+id/img2"
+            />
+        <TextView
+            android:id="@+id/mtvGoPg"
+            android:layout_below="@+id/img2"
+            android:layout_alignLeft="@+id/img2"
+            android:layout_marginTop="40px"
+            android:paddingLeft="20px"
+            android:visibility="gone"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_corner_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去评估"
+            />
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_toRightOf="@+id/mtvGoPg"
+            android:layout_alignBottom="@+id/mtvGoPg"
+            android:background="@mipmap/suibiantiantian_1080"
+            android:layout_width="30px"
+            android:visibility="gone"
+            android:layout_marginLeft="60px"
+            android:layout_marginBottom="20px"
+            android:layout_height="30px" />
+        <TextView
+            android:id="@+id/tvDBTT"
+            android:layout_toRightOf="@+id/img3"
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mtvGoPg"
+            android:text="随便填填"
+            android:visibility="gone"
+            android:layout_marginBottom="10px"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/year"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="40px">
+
+        <ImageView
+            android:id="@+id/lineview1"
+            android:layout_width="4px"
+            android:layout_height="300px"
+            android:layout_marginRight="30px"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:id="@+id/tvSHFXTX"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/lineview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活风险提醒" />
+        <ImageView
+            android:id="@+id/img22"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignLeft="@+id/tvSHFXTX"
+            android:layout_below="@+id/tvSHFXTX"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="20px"
+            android:background="@mipmap/zhuyi_1080"
+            />
+        <TextView
+            android:text="告诉我你的健康状态，我和您一起守护健康！"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/img22"
+            android:layout_alignBottom="@+id/img22"
+            android:layout_alignTop="@+id/img22"
+            />
+        <TextView
+            android:id="@+id/mtvGoPg2"
+            android:layout_below="@+id/img22"
+            android:layout_alignLeft="@+id/img22"
+            android:layout_marginTop="40px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_corner_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去评估"
+            />
+        <ImageView
+            android:id="@+id/img32"
+            android:layout_toRightOf="@+id/mtvGoPg2"
+            android:layout_alignBottom="@+id/mtvGoPg2"
+            android:background="@mipmap/suibiantiantian_1080"
+            android:layout_width="30px"
+            android:layout_marginLeft="60px"
+            android:layout_marginBottom="20px"
+            android:layout_height="30px" />
+        <TextView
+            android:layout_toRightOf="@+id/img32"
+            android:layout_marginLeft="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mtvGoPg2"
+            android:text="随便填填"
+            android:layout_marginBottom="10px"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

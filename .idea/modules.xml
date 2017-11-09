@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/StepCounter/StepCounter.iml" filepath="$PROJECT_DIR$/StepCounter/StepCounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zxinglib/Zxinglib.iml" filepath="$PROJECT_DIR$/Zxinglib/Zxinglib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/healthcareup.iml" filepath="$PROJECT_DIR$/healthcareup.iml" />
+    </modules>
+  </component>
+</project>

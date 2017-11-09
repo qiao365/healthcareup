@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">小语健康</string>
+    <string name="digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012/-+3456789@#$%.*=/!~(){}[]:</string>
+
+    <!--检测名称-->
+    <string-array name="testName">
+        <item>身高</item>
+        <item>体重</item>
+        <item>腹围</item>
+        <item>血尿酸</item>
+        <item>血压</item>
+        <!--<item>血糖</item>-->
+        <!--<item>糖化血红蛋白（HbA1c）</item>-->
+        <!--<item>OGTT</item>-->
+        <!--<item>肝功</item>-->
+        <item>肾功</item>
+        <item>血脂</item>
+        <!--<item>24h尿尿酸</item>-->
+        <!--<item>24h尿蛋白定量</item>-->
+        <!--<item>离子检测</item>-->
+        <!--<item>血常规</item>-->
+        <item>尿常规</item>
+    </string-array>
+
+    <!--检测项   单位-->
+    <string-array name="textIndex_unit">
+        <item>---</item>
+        <item>mmol/L</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>Kg</item>
+        <item>mmHg</item>
+        <item>％</item>
+        <item>/ul</item>
+        <item>/hp</item>
+        <item>U/L</item>
+        <item>umol/l</item>
+        <item>U</item>
+        <item>g/L</item>
+        <item>ml/min</item>
+        <item>nmol.s-1/L </item>
+        <item>μmol/L</item>
+        <item>μmmol·kg-1/d</item>
+        <item>μl/min</item>
+        <item>ml·s-1/m2</item>
+        <item>min</item>
+        <item>umol/24h</item>
+        <item>mg/24h</item>
+        <item>10^9/L</item>
+        <item>10^12/L</item>
+        <item>fL</item>
+        <item>pg</item>
+        <item>阴性</item>
+        <item>阳性</item>
+    </string-array>
+
+    <!--检测指标  血压-->
+    <string-array name="testIndex_xy">
+        <item>收缩压</item>
+        <item>舒张压</item>
+    </string-array>
+    <string-array name="testIndex_xy_key">
+        <item>systolic_blood_pressure</item>
+        <item>diastolic_blood_pressure</item>
+    </string-array>
+
+    <!--检测指标  血糖-->
+    <string-array name="testIndex_xt">
+        <item>空腹血糖(GLU)</item>
+        <item>餐后1小时血糖(GLU)</item>
+        <item>餐后2小时血糖(GLU)</item>
+        <item>随机血糖(GLU)</item>
+        <item>睡前血糖(GLU)</item>
+    </string-array>
+
+    <!--检测指标  OGTT-->
+    <string-array name="testIndex_ogtt">
+        <item>空腹血糖(GLU)</item>
+        <item>餐后1小时血糖(GLU)</item>
+        <item>餐后2小时血糖(GLU)</item>
+    </string-array>
+
+    <!--检测指标  肝功-->
+    <string-array name="testIndex_gg">
+        <item>谷丙转氨酶(ALT)</item>
+        <item>谷草转氨酶(AST)</item>
+        <item>直接胆红素(DBil)</item>
+        <item>间接胆红素(IBil)</item>
+        <item>总胆红素(TBil)</item>
+        <item>ALT /AST</item>
+        <item>碱性磷酸酶(ALP)</item>
+        <item>γ-转肽酶(γ-GT)</item>
+        <item>血清总蛋白</item>
+        <item>血清白蛋白</item>
+        <item>血清球蛋白</item>
+        <item>白蛋白/球蛋白比值(A/G)</item>
+        <item>丙氨酸氨基转移酶</item>
+        <item>门冬氨酸氨基转移酶</item>
+    </string-array>
+
+    <!--检测指标  肾功-->
+    <string-array name="testIndex_sg">
+        <item>血尿素氮(BUN)</item>
+        <item>血肌酐(Scr)</item>
+        <!--<item>尿素氮</item>-->
+        <!--<item>血尿酸</item>-->
+        <!--<item>总胆红素(TBil)</item>-->
+        <!--<item>血肌酐(Cr)</item>-->
+        <!--<item>尿蛋白</item>-->
+        <!--<item>选择性蛋白尿指数(SPI)</item>-->
+        <!--<item>β2-微球蛋白清除试验</item>-->
+        <!--<item>尿素清除率</item>-->
+        <item>肌酐清除率</item>
+        <item>尿素氮/血清肌酐</item>
+        <!--<item>酚红(酚磺太)排泄试验(PSP)</item>-->
+    </string-array>
+
+    <string-array name="testIndex_sg_key">
+        <item>urea nitrogen</item>
+        <item>serum creatinine</item>
+        <item>creatinine clearance rate</item>
+        <item>urea nitrogen/urea nitrogen</item>
+    </string-array>
+
+    <!--检测指标  血脂-->
+    <string-array name="testIndex_xz">
+        <item>总胆固醇（TC）</item>
+        <item>甘油三酯（TG）</item>
+        <item>高密度脂肪酸</item>
+        <item>低密度脂肪酸</item>
+    </string-array>
+    <string-array name="testIndex_xz_key">
+        <item>total_cholesterol</item>
+        <item>triglyceride</item>
+        <item>high_density_lipoprotein</item>
+        <item>low_density_lipoprotein</item>
+    </string-array>
+
+    <!--检测指标  离子检测-->
+    <string-array name="testIndex_lzjc">
+        <item>钠</item>
+        <item>钾</item>
+        <item>氯</item>
+    </string-array>
+
+    <!--检测指标  血常规-->
+    <string-array name="testIndex_xcg">
+        <item>白细胞总数（WBC）</item>
+        <item>红细胞总数（RBC）</item>
+        <item>血红蛋白（HB）</item>
+        <item>红细胞压积 (HCT)</item>
+        <item>红细胞平均体积（MCV）</item>
+        <item>平均红细胞血红蛋白含量(MCH)</item>
+        <item>平均红细胞血红蛋白浓度（MCHC）</item>
+        <item>血小板总数（PLT）</item>
+        <item>淋巴细胞比率（LYM）</item>
+        <item>中间细胞比率 (MID)</item>
+        <item>中性粒细胞比率 (GRAN)</item>
+        <item>淋巴细胞总数 （LYM）</item>
+        <item>中间细胞总数 (MID)</item>
+        <item>中性粒细胞总数（GRAN)</item>
+        <item>红细胞分布宽度（RDW-SD）</item>
+        <item>红细胞分布宽度（RDW-CV）</item>
+        <item>血小板分布宽度（PDW）</item>
+        <item>血小板平均体积（MPV）</item>
+        <item>血小板压积（PCT)</item>
+        <item>大血小板比率（P-LCR）</item>
+        <item>大血小板总数（P-LCC）</item>
+    </string-array>
+
+    <!--检测指标  尿常规-->
+    <string-array name="testIndex_ncg">
+        <item>白细胞(LEU)</item>
+        <item>亚硝酸盐(NIT)</item>
+        <item>尿胆原(UBG)</item>
+        <item>蛋白质(PRO)</item>
+        <item>酸碱度(pH)</item>
+        <!--<item>潜血(BLD)</item>-->
+        <item>比重(SG)</item>
+        <item>酮体(KET)</item>
+        <item>胆红素(BIL)</item>
+        <item>葡萄糖(GLU)</item>
+        <!--<item>维生素C(VC) </item>-->
+    </string-array>
+    <string-array name="testIndex_ncg_key">
+        <item>urine_leukocytes</item>
+        <item>urine_nitrite</item>
+        <item>urobilinogen</item>
+        <item>urine_protein</item>
+        <item>urine_PH</item>
+        <!--<item>潜血(BLD)</item>-->
+        <item>urine_specific_gravity</item>
+        <item>urine_ketone</item>
+        <item>urine_bilirubin</item>
+        <item>urine_glucose</item>
+        <!--<item>维生素C(VC) </item>-->
+    </string-array>
+
+    <!--药品单位-->
+    <string-array name="med_unit">
+        <item>g</item>
+        <item>mg</item>
+        <item>粒</item>
+        <item>片</item>
+        <item>袋</item>
+        <item>丸</item>
+    </string-array>
+
+    <!--药品名称-->
+    <string-array name="med_name">
+        <item>秋水仙碱</item>
+        <item>阿司匹林</item>
+        <item>双氯芬酸钠</item>
+        <item>吲哚美辛</item>
+        <item>布洛芬</item>
+        <item>奈普生</item>
+        <item>吡罗昔康</item>
+        <item>美洛昔康</item>
+        <item>塞来昔布</item>
+        <item>罗非昔布</item>
+
+        <!---->
+        <item>洛伐他汀</item>
+        <item>辛伐他汀</item>
+        <item>氯贝特</item>
+        <item>阿昔莫司</item>
+        <item>烟酸</item>
+        <item>考来替泊</item>
+
+        <!---->
+        <item>维拉帕米</item>
+        <item>硝苯地平</item>
+        <item>氨氯地平</item>
+        <item>尼莫地平</item>
+        <item>尼卡地平</item>
+        <item>尼群地平</item>
+        <item>尼索地平</item>
+        <item>非洛地平</item>
+        <item>贝尼地平</item>
+        <item>拉西地平</item>
+        <item>地尔硫卓</item>
+        <item>氟桂利嗪</item>
+        <item>桂利嗪</item>
+        <item>利多氟嗪</item>
+        <item>氯噻嗪</item>
+        <item>氯噻酮</item>
+        <item>呋塞米</item>
+        <item>托拉塞米</item>
+        <item>螺内酯</item>
+        <item>武都力</item>
+        <item>甘露醇</item>
+        <item>比索洛尔</item>
+        <item>美托洛尔</item>
+        <item>阿替洛尔</item>
+    </string-array>
+
+</resources>
